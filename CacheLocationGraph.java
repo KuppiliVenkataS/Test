@@ -192,10 +192,10 @@ public class CacheLocationGraph {
      */
     private  class CacheNode{
         int name;
-        CacheNode pred;
-        ArrayList<CacheNode> succList;
-        long cost;
-        boolean hasPred;
+        CacheNode pred; //predecessor to the current cache node
+        ArrayList<CacheNode> succList; //List of successors for a given node
+        long cost; 
+        boolean hasPred; 
 
 
         public CacheNode(int name) {
